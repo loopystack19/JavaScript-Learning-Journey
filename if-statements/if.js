@@ -27,12 +27,12 @@ submitBtn.onclick = function () {
 
       conclusion.classList.add("correct");
 
-      conclusion.textContent = `negative Number`;
+      conclusion.textContent = `Negative Number`;
     } else {
 
       conclusion.classList.add("correct");
 
-      conclusion.textContent = `this is a zero`;
+      conclusion.textContent = `Zero`;
     }
   }
 };

@@ -1,0 +1,1 @@
+**Nested If statements are used to check multiple condition and a particular code block executes depending on the evaluation of the condition**

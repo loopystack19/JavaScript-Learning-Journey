@@ -24,6 +24,7 @@
     border: 0.1px solid black;
     height: 25px;
     padding: 10px;
+    border-radius: 10px;
 }
 .container button{
     width: 100%;
