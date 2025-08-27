@@ -1,3 +1,5 @@
-let userName="loopystack19";
+var randomString="Good morning people";
 
-console.log(userName.length);
+let split1=randomString.split("");
+
+console.log(split1);

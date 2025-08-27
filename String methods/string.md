@@ -58,3 +58,50 @@ console.log(userName.length);
 
 **String Slicing**
 
+**Syntax**
+
+userName.slice("start","end");
+
+**Sample programme**
+
+var fullName="loopy stack19";
+
+var firstName=fullName.slice(0, fullName.indexOf(" "));
+
+var lastName=fullName.slice(fullName.indexOf(" ")+ 1);
+
+console.log(firstName);
+
+console.log(lastName);
+
+-The slice method allows you to create a new string for an existing string without altering the original string 
+
+**.splice()**->this allows addition and removal elements at the same time 
+
+**sample programme**
+
+var arrayNumbers=[1,2,3,4,5];
+
+arrayNumbers.splice(0, 2, "We deleted two items starting at index 0");
+
+console.log(arrayNumbers);
+
+**split()**->this method returns an array after performing a spilt based on the seperator 
+
+**Syntax**->.split("seperator", limit);
+
+**sample programme**
+
+var randomString="Good morning people";
+
+let split1=randomString.split("");
+
+console.log(split1);
+
+**output**->[
+  'G', 'o', 'o', 'd', ' ',
+  'm', 'o', 'r', 'n', 'i',
+  'n', 'g', ' ', 'p', 'e',
+  'o', 'p', 'l', 'e'
+]
+
