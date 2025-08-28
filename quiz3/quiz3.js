@@ -1,34 +1,65 @@
 /*Write a javascript program to replace every character in a string with a character that follows it in the Alphabet */
 
-var string="Hello papa";
+var alphabetCharacters = [
+  "a",
+  "b",
+  "c",
+  "d",
+  "e",
+  "f",
+  "g",
+  "h",
+  "i",
+  "j",
+  "k",
+  "l",
+  "m",
+  "n",
+  "o",
+  "p",
+  "q",
+  "r",
+  "s",
+  "t",
+  "u",
+  "v",
+  "w",
+  "x",
+  "y",
+  "z",
+];
 
-var splitString=string.toLowerCase().split("");
+var newWord;
 
-var alphabetCharacter=["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+var transformWord = function (str) {
+  let splitString = str.toLowerCase().split("");
 
-var newLettersIndex=[];
+  let newWordArray = [];
 
-var formedWord;
+  let newWordChars = [];
 
-for(let i=0; i<splitString.length; i++){
-
-    if(alphabetCharacter.includes(splitString[i])){
-
-        newLettersIndex.push((alphabetCharacter.indexOf(string[i])+1) % alphabetCharacter.length );
-    }else{
-
-        newLettersIndex.push(string[i])
+  for (let i = 0; i < splitString.length; i++) {
+    if (alphabetCharacters.includes(splitString[i])) {
+      newWordArray.push(
+        (alphabetCharacters.indexOf(splitString[i]) + 1) %
+          alphabetCharacters.length
+      );
+    } else {
+      newWordArray.push(splitString[i]);
     }
-}
+  }
 
-for(let j=0; j<newLettersIndex.length; j++){
+  for (let j = 0; j < newWordArray.length; j++) {
+    if (typeof newWordArray[j] !== "number") {
+      newWordChars.push(newWordArray[j]);
+    } else {
+      newWordChars.push(alphabetCharacters[newWordArray[j]]);
+    }
+  }
 
-    newLettersIndex.push(alphabetCharacter[newLettersIndex[j]]);
+  newWord = newWordChars.join("");
 
-    formedWord=newLettersIndex.join("");
-}
+  console.log(newWord);
+};
 
-console.log(formedWord);
-
-
-
+transformWord("hello jafar");
