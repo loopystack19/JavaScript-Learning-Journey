@@ -62,4 +62,4 @@ var transformWord = function (str) {
   console.log(newWord);
 };
 
-transformWord("hello jafar");
+transformWord("z");
