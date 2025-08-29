@@ -1,22 +1,20 @@
-/*Write a program using a for loop that:
-Prints all prime numbers between 1 and 100.*/
+function printAllPrime() {
+  const primeNumbers = [];
 
-let printPrimeNumbers=function(){
-
-    let primeNumbers=[];
-
-    for(let n=2; n<=100; n++){
-
-        for(d=2; d<=n; d++){
-
-            if(n % d === 0){
-
-                primeNumbers.push(n);
-            }
-        }
+  for (let n = 2; n <= 100; n++) {
+    let isPrime = true;
+    for (let d = 2; d < n; d++) {
+      if (n % d === 0) {
+        isPrime = false;
+        break;
+      }
     }
+    if (isPrime) {
+      primeNumbers.push(n);
+    }
+  }
 
-    console.log(primeNumbers)
+  console.log(primeNumbers);
 }
 
-printPrimeNumbers();
+printAllPrime();
