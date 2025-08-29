@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="temp.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h3>Temperature convetor programme</h3>
+        <br>
+        <label for="temp">input your tempearure value</label>
+        <br>
+        <input type="text" id="temp" placeholder="65" required>
+        <br>
+        <div class="radio-button">
+            <label for="farenheit">farenheit</label>
+            <input type="radio" id="farenheit" name="unit">
+            <label for="celcius">celcius</label>
+            <input type="radio" id="celcius" name="unit">
+            <br>
+            <button id="calculate" onclick="convertTemp()">Calculate</button>
+            <br>
+            <p id="results"></p>
+        </div>
+    </div>
+ <script src="temp.js"></script>   
+</body>
+</html>
