@@ -1,20 +1,72 @@
-let allChars =
-  "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890~!@#$%^&*()_+abcdefghijklmnopqrstuvwxyz";
+let textBox = document.getElementById("passwordTextBox");
 
-let password = "";
+let upperCaseCharCheckBox = document.getElementById("upperCaseChars");
+let lowerCaseCharCheckBox = document.getElementById("lowerCaseChars");
+let numberCharsCheckBox = document.getElementById("numberChars");
+let symbolCharCheckBox = document.getElementById("symbolChars");
+
+document.getElementById("generate").addEventListener("click", generatePassword);
 
 function generatePassword() {
-  let passwordArray = [];
+  
+  textBox.classList.remove("error", "correct");
+  textBox.value = "";
 
-  splitChars = allChars.split("");
+  let passwordLength = Number(document.getElementById("length").value);
 
-  for (let i = 0; i < 12; i++) {
-    passwordArray.push(splitChars[Math.floor(Math.random() * 12)]);
+  let upperCaseChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  let lowerCaseChars = "abcdefghijklmnopqrstuvwxyz";
+  let numberChars = "1234567890";
+  let symbolChars = "~!@#$%^&*()_+=";
+
+  let allowedChars = "";
+
+  if (upperCaseCharCheckBox.checked) {
+    allowedChars += upperCaseChars;
+  }
+  if (lowerCaseCharCheckBox.checked) {
+    allowedChars += lowerCaseChars;
+  }
+  if (numberCharsCheckBox.checked) {
+    allowedChars += numberChars;
+  }
+  if (symbolCharCheckBox.checked) {
+    allowedChars += symbolChars;
   }
 
-  password = passwordArray.join("");
+  if (isNaN(passwordLength)) {
+    textBox.classList.add("error");
+    textBox.value = "Error: input a number value";
+    return;
+  }
 
-  console.log(password);
+  if (passwordLength < 8) {
+    textBox.classList.add("error");
+    textBox.value = "Error: password length should be at least 8";
+    return;
+  }
+
+  if (allowedChars.length === 0) {
+    textBox.classList.add("error");
+    textBox.value = "Error: select at least one character type";
+    return;
+  }
+
+
+  let password = "";
+  for (let i = 0; i < passwordLength; i++) {
+    let randomIndex = Math.floor(Math.random() * allowedChars.length);
+    password += allowedChars[randomIndex];
+  }
+
+  textBox.classList.add("correct");
+  textBox.value = password;
 }
 
-generatePassword();
+
+let generateBtn = document.getElementById("generate");
+
+generateBtn.addEventListener("click",function(){
+
+    generateBtn.classList.add("animation-loading");
+})

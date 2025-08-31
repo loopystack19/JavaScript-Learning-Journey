@@ -1,26 +1,36 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="random.css">
-    <title>Random password generator</title>
+    <title>Password generator</title>
 </head>
 <body>
-
     <div class="container">
-        <h3>Random password generator</h3>
-        <br>
-        <label for="length">Password Length:</label>
-        <br>
-        <input type="text" id="length" placeholder="9">
-        <label for="password">Password:</label>
-        <br>
-        <input type="text" id="password"  readonly>
-        <br>
-        <p id="errorMessage"></p>
+        <h3>Password generator</h3>
+        <div class="password-shown">
+            <input type="text" id="passwordTextBox" placeholder="ADCF_&$34fG" readonly>
+        </div>
+        <div class="customize-password">
+            <label for="length">Password Length</label>
+            <br>
+            <input type="text" id="length">
+            <br>
+            <input type="checkbox" id="upperCaseChars">
+            <label for="upperCaseChars">Include Uppercase Characters</label>
+            <br>
+            <input type="checkbox" id="lowerCaseChars">
+            <label for="lowerCaseChars">Include Lowercase Characters</label>
+            <br>
+             <input type="checkbox" id="numberChars">
+            <label for="numberChars">Include Number Characters</label>
+            <br>
+             <input type="checkbox" id="symbolChars">
+            <label for="symbolChars">Include symbol  Characters</label>
+        </div>
         <button id="generate" onclick="generatePassword()">Generate</button>
     </div>
-  <script src="random.js"></script>  
+   <script src="random.js"></script> 
 </body>
-</html> -->
+</html>
