@@ -1,0 +1,19 @@
+**Filter()**-Creates a new array but filtering out elements based on a predefined condition in a callback function, the filter method returns a boolean value 
+
+**syntax**
+
+Array.filter(callback)
+
+**Sample programme 1**
+
+//Write a function that takes an array of words and uses filter to return only the words that start with the letter "a" (case-insensitive).
+
+let words = ["Apple", "banana", "avocado", "Cat"];
+
+
+function returnA(element){
+
+     return element.toLowerCase().charAt(0)=== "a"
+}
+
+console.log(words.filter(returnA));
