@@ -1,19 +1,16 @@
 let person1={
-    firstName:"spongeBob",
-    lastName:"squarePants",
-    age:30,
-    isEmployed:true,
-    sayHello:function(){console.log("Hello, am spongeBob")}
+
+    firstName:"patrick",
+    lastName:"star",
+    age:25,
+    isEmployed:false,
+    sayHello:function(){
+
+        console.log("Hello am patrick");
+    }
 }
 
-//Accessing the properties of person1
+for(let key in person1){
 
-console.log(person1.firstName);
-
-console.log(person1.lastName);
-
-console.log(person1.age);
-
-console.log(person1.isEmployed);
-
-person1.sayHello();
+    console.log(person1[key]);
+}
