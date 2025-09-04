@@ -7,7 +7,9 @@ function outter(){
         console.log(msg);
     }
 
-    return inner();
+    return inner;
 }
 
-outter();
+const execution= outter();
+
+execution();
