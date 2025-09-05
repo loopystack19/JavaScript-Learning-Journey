@@ -1,0 +1,1 @@
+asynchronous code allows concurrent execution of code blocks, without necessarily stopping or blcking another code block
