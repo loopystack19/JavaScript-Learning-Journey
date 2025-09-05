@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="interest.css">
+    <title>Interest calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="inner-container">
+            <h3>Interest calculator</h3>
+            <label for="principal">Principal</label>
+            <br>
+            <input type="text" id="principal" placeholder="Enter amount">
+            <br>
+            <label for="rate">Rate(%)</label>
+            <br>
+            <input type="text" id="rate" placeholder="Enter Rate">
+            <br>
+            <label for="time">Time(years)</label>
+            <br>
+            <input type="text" id="time" placeholder="Enter Time">
+            <br>
+           <label for="interest">Interest Type</label>
+           <br>
+           <label for="simpleInterest">Simple Interest</label>
+           <input type="radio" id="simpleInterest" name="interest">
+           <label for="compoundInterest">Compound Interest </label>
+           <input type="radio" id="compoundInterest" name="interest">
+           <br>
+           <button onclick=" calculateInterest()">Calculate</button>
+           <br>
+           <p id="results">0</p>
+        </div>
+    </div>
+  <script src="interest.js"></script>  
+</body>
+</html>
