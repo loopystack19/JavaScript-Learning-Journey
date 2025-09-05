@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+h3{
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+.container{
+    width: 400px;
+    height: 200px;
+    border: 0.1px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container p{
+
+    margin: 30px 0;
+    font-size: 2rem;
+}
+.button-container button{
+    margin-inline: 10px;
+    width: 100px;
+    height: 25px;
+    border: 0.1px solid;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+}
+#start{
+    background-color: green;
+    border: green;
+}
+#reset{
+    background-color: grey;
+    border: grey;
+}
+#stop{
+    background-color: red;
+    border: red;
+}
