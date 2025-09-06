@@ -1,9 +1,7 @@
 
 
-const ulElements=document.querySelectorAll("ul");
+const fruits=document.querySelector(".vegetables");
 
+const nextSibling=fruits.previousElementSibling;
 
-ulElements.forEach((ulElement)=>{
-
-    ulElement.lastElementChild.style.backgroundColor="yellow";
-})
+nextSibling.style.backgroundColor="yellow";
