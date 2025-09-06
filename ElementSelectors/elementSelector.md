@@ -168,3 +168,75 @@ Array.from(boxElement).forEach((box)=>{
 
     box.style.border=" 1px solid black";
 })
+
+**document.getElementsTagName("html-element)**
+
+**1.Select all <p> elements and append " - Done" to their text.**
+
+<p>Task 1</p>
+<p>Task 2</p>
+<p>Task 3</p>
+
+const pTags=document.getElementsByTagName("p");
+
+
+Array.from(pTags).forEach((pTag)=>{
+
+    pTag.innerText+="-Done";
+});
+
+**2. Select all <li> elements and log their text in the console.**
+
+<ul>
+  <li>Apple</li>
+  <li>Banana</li>
+  <li>Orange</li>
+</ul>
+
+
+const liTags=document.getElementsByTagName("li");
+
+Array.from(liTags).forEach((liTag)=>{
+
+    console.log(liTag.innerText);
+})
+
+
+**3. Select all <img> tags and set their width to "200px".**
+
+<img src="one.png">
+<img src="two.png">
+<img src="three.png">
+
+const imgTags=document.getElementsByTagName("img");
+
+Array.from(imgTags).forEach((imgTag)=>{
+
+    imgTag.style.width="200px";
+});
+
+**4.Count how many <h2> elements are on the page and print the number.**
+
+<h2>Heading A</h2>
+<h2>Heading B</h2>
+<h2>Heading C</h2>
+
+const h2Elements=document.getElementsByTagName("h2");
+
+console.log(Array.from(h2Elements).length);
+
+**5. Select all <span> tags and change their text color to red.**
+
+<span>Low</span>
+<span>Medium</span>
+<span>High</span>
+
+
+const spanTags=document.getElementsByTagName("span");
+
+Array.from(spanTags).forEach((spanTag)=>{
+
+    spanTag.style.color="red";
+})
+
+**document.getQuerySelector()**

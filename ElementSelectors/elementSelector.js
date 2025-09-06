@@ -1,6 +1,6 @@
-const boxElement=document.getElementsByClassName("box");
+const spanTags=document.getElementsByTagName("span");
 
-Array.from(boxElement).forEach((box)=>{
+Array.from(spanTags).forEach((spanTag)=>{
 
-    box.style.border=" 1px solid black";
+    spanTag.style.color="red";
 })
