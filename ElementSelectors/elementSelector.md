@@ -239,4 +239,6 @@ Array.from(spanTags).forEach((spanTag)=>{
     spanTag.style.color="red";
 })
 
-**document.getQuerySelector()**
+**document.querySelector()**-returns the first element it finds, or null
+
+
