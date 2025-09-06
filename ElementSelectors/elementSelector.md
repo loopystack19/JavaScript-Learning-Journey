@@ -241,4 +241,4 @@ Array.from(spanTags).forEach((spanTag)=>{
 
 **document.querySelector()**-returns the first element it finds, or null
 
-
+**document.querySelectorAll()**-queryselectorAll returns a node list, it has an inbuilt forEach method
