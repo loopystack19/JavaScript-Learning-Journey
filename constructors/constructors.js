@@ -1,20 +1,17 @@
-function Person(firstName, lastName, age, isEmployed){
+//constructor-> A special method used to define the methods and properties of objects
 
-    this.firstName=firstName;
-    this.lastName=lastName;
-    this.age=age;
-    this.isEmployed=isEmployed;
+function Person(firstName, lastName, age, isEmployed,hobbies){
+    this.firstName=firstName,
+    this.lastName=lastName,
+    this.age=age,
+    this.isEmployed=isEmployed,
+    this.hobbies=hobbies
 }
 
+let person1= new Person("SpongeBob","SquarePnats",27,["jelly","Bubble blowing","Karate"]);
 
-let person1=new Person("spongeBob", "squarePants", 25, true);
+let person2=new Person("Patrick","Star",32,["jelly Fishing"]);
 
-let person2=new Person("patrick","star",42,false);
+console.log(person1);
 
-let person3=new Person("sandy","cheecks", 27, false);
-
-console.log(person1.firstName);
-
-console.log(person2.lastName);
-
-console.log(person3.isEmployed);
+console.log(person2);
