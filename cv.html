@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jafar Maalim Hussein - CV</title>
+    <style>
+        @media print {
+            body { margin: 0; }
+            .no-print { display: none; }
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            max-width: 8.5in;
+            margin: 0 auto;
+            padding: 0.75in;
+            background: white;
+            color: #000;
+            line-height: 1.5;
+        }
+        
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #000;
+        }
+        
+        .header-left {
+            flex: 1;
+        }
+        
+        .name {
+            font-size: 36px;
+            font-weight: bold;
+            color: #1a5f3a;
+            margin: 0;
+            line-height: 1.1;
+        }
+        
+        .professional-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 5px 0 0 0;
+        }
+        
+        .header-right {
+            text-align: right;
+            font-size: 11px;
+            line-height: 1.6;
+        }
+        
+        .summary {
+            margin: 20px 0;
+            text-align: justify;
+            font-size: 12px;
+        }
+        
+        .section-title {
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #000;
+        }
+        
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-top: 12px;
+            margin-bottom: 5px;
+        }
+        
+        .company-role {
+            font-weight: bold;
+            font-size: 13px;
+        }
+        
+        .location-date {
+            font-style: italic;
+            font-size: 12px;
+        }
+        
+        ul {
+            margin: 5px 0 15px 0;
+            padding-left: 20px;
+        }
+        
+        li {
+            margin-bottom: 5px;
+            font-size: 11.5px;
+        }
+        
+        .education-item {
+            margin-bottom: 10px;
+        }
+        
+        .education-title {
+            font-weight: bold;
+            font-size: 12px;
+        }
+        
+        .education-details {
+            font-size: 11px;
+            font-style: italic;
+        }
+        
+        .skills-section {
+            font-size: 11.5px;
+            line-height: 1.6;
+        }
+        
+        .skill-category {
+            margin-bottom: 5px;
+        }
+        
+        .skill-label {
+            font-weight: bold;
+        }
+        
+        .download-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 12px 24px;
+            background: #1a5f3a;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            z-index: 1000;
+        }
+        
+        .download-btn:hover {
+            background: #145032;
+        }
+    </style>
+</head>
+<body>
+    <button class="download-btn no-print" onclick="window.print()">Download as PDF</button>
+    
+    <div class="header">
+        <div class="header-left">
+            <h1 class="name">Jafar Maalim Hussein</h1>
+            <div class="professional-title">Aspiring Full Stack Developer</div>
+        </div>
+        <div class="header-right">
+            Location: Nairobi, Kenya<br>
+            Phone: +254-723-552-198<br>
+            Email: jafarhussein251@gmail.com<br>
+            GitHub: github.com/loopystack19
+        </div>
+    </div>
+    
+    <div class="summary">
+        Seeking to leverage <strong>full-stack development skills</strong> and <strong>collaborative mindset</strong> to build <strong>impactful digital products</strong> in the <strong>Digital Product School Software Engineer</strong> role. I'm excited about the opportunity to deepen my understanding of <strong>agile methodologies</strong> and <strong>cross-functional teamwork</strong> within the program. As of today, I am ready to contribute as a <strong>Software Engineer</strong> at <strong>Digital Product School</strong>.
+    </div>
+    
+    <div class="section-title">Work Experience</div>
+    
+    <div class="experience-header">
+        <div class="company-role"><strong>Outlier</strong> | Freelance Software Developer</div>
+        <div class="location-date">Remote | 2024 - 2025</div>
+    </div>
+    <ul>
+        <li>Delivered client-oriented project work demonstrating adaptability and professional communication</li>
+        <li>Gained hands-on experience in project execution and meeting deliverable deadlines</li>
+        <li>Applied technical problem-solving skills to real-world client requirements</li>
+    </ul>
+    
+    <div class="experience-header">
+        <div class="company-role"><strong>Private Tutor</strong> | Mathematics & Computer Studies Tutor</div>
+        <div class="location-date">Nairobi, Kenya | 2023 - 2024</div>
+    </div>
+    <ul>
+        <li>Tutored  high school students in mathematics and physic in neighborhood community, improving their grades by an average of 15%</li>
+        <li>Developed personalized lesson plans to accommodate different learning styles and academic levels</li>
+        <li>Built strong communication and leadership skills by explaining complex concepts in accessible terms</li>
+        <li>Demonstrated patience and adaptability while working with diverse student backgrounds and learning paces</li>
+    </ul>
+    
+    <div class="section-title">Projects</div>
+    
+    <div class="experience-header">
+        <div class="company-role"><strong>Umoja Hub - Community Employment Platform</strong></div>
+        <div class="location-date">Full Stack Developer | Sep 2025 - Dec 2025</div>
+    </div>
+    <ul>
+        <li>Architected and developed a full-stack web platform addressing unemployment by connecting community members with skill-development programs and job opportunities using React, Node.js, Express, and MongoDB</li>
+        <li>Implemented user authentication with role-based access control using JWT and bcrypt to secure platform data</li>
+        <li>Built RESTful APIs and interactive dashboard with search/filter functionality to enhance user experience</li>
+        <li>Currently developing MVP with core features (authentication, dashboard) nearing completion for December 2025 deployment</li>
+    </ul>
+    
+    <div class="experience-header">
+        <div class="company-role"><strong>Internet Service Provider Business Website</strong></div>
+        <div class="location-date">Frontend Developer | 3 weeks</div>
+    </div>
+    <ul>
+        <li>Developed responsive, mobile-first business website for a local internet provider using React, Tailwind CSS, and React Router</li>
+        <li>Created multi-page architecture including service listings, pricing details, about page, and functional contact form with validation</li>
+        <li>Optimized component performance and structured intuitive navigation to reflect real-world client needs</li>
+        <li>Deployed production-ready demo showcasing professional-grade frontend development capabilities</li>
+    </ul>
+    
+    <div class="experience-header">
+        <div class="company-role"><strong>Expense Tracker Application</strong></div>
+        <div class="location-date">Frontend Developer | 1 week</div>
+    </div>
+    <ul>
+        <li>Built expense tracking tool using HTML, CSS, and Vanilla JavaScript with add/edit/delete functionality</li>
+        <li>Implemented LocalStorage for data persistence and custom JavaScript logic for dynamic DOM updates</li>
+        <li>Created visualization feature with JavaScript-based charts to display spending by category</li>
+    </ul>
+    
+    <div class="section-title">Community & Leadership</div>
+    
+    <div class="experience-header">
+        <div class="company-role"><strong>Google Developer Student Club (GDSC), MKU Chapter</strong> | Active Member</div>
+        <div class="location-date">2024 - Present</div>
+    </div>
+    <ul>
+        <li>Engaged in collaborative learning sessions on modern development practices and emerging technologies</li>
+        <li>Participated in team-based workshops fostering cross-functional collaboration skills</li>
+    </ul>
+    
+    <div class="experience-header">
+        <div class="company-role"><strong>MKU AWS Student Group</strong> | Active Member</div>
+        <div class="location-date">2024 - Present</div>
+    </div>
+    <ul>
+        <li>Gained foundational exposure to AWS cloud services and cloud computing fundamentals</li>
+        <li>Collaborated with peers on cloud technology discussions and knowledge sharing</li>
+    </ul>
+    
+    <div class="experience-header">
+        <div class="company-role"><strong>Local Mosque Community Group</strong> | Volunteer</div>
+        <div class="location-date">2023 - Present</div>
+    </div>
+    <ul>
+        <li>Supported community outreach programs by visiting orphanages and children's homes</li>
+        <li>Demonstrated empathy, teamwork, and commitment to social impact through caregiving and community service activities</li>
+    </ul>
+    
+    <div class="section-title">Education</div>
+    
+    <div class="education-item">
+        <div class="education-title">CS50's Introduction to Computer Science | Harvard University</div>
+        <div class="education-details">Certificate | 2024</div>
+    </div>
+    
+    <div class="education-item">
+        <div class="education-title">Bachelor of Science in Computer Science | Mount Kenya University</div>
+        <div class="education-details">GPA: 3.3 | Expected Graduation: 2026</div>
+    </div>
+    
+    <div class="education-item">
+        <div class="education-title">Kenya Certificate of Secondary Education (KCSE) | Dagoretti High School</div>
+        <div class="education-details">Grade: B | 2019</div>
+    </div>
+    
+    <div class="section-title">Technical Skills</div>
+    
+    <div class="skills-section">
+        <div class="skill-category">
+            <span class="skill-label">Languages & Frameworks:</span> JavaScript, React, Node.js, Express.js, HTML, CSS, Java, Python, PHP, SQL
+        </div>
+        <div class="skill-category">
+            <span class="skill-label">Styling & UI:</span> Tailwind CSS, Bootstrap, Responsive Design
+        </div>
+        <div class="skill-category">
+            <span class="skill-label">Databases:</span> MongoDB, MySQL
+        </div>
+        <div class="skill-category">
+            <span class="skill-label">Tools & Platforms:</span> Git, GitHub (branching, merging, pull requests), VS Code, Netlify, Vercel
+        </div>
+        <div class="skill-category">
+            <span class="skill-label">APIs & Authentication:</span> RESTful API Design, JWT, bcrypt
+        </div>
+        <div class="skill-category">
+            <span class="skill-label">Currently Learning:</span> Backend development (Node.js, databases, APIs), deployment workflows
+        </div>
+        <div class="skill-category" style="margin-top: 10px;">
+            <span class="skill-label">Languages:</span> Somali (Native), English (Professional), Swahili (Conversational)
+        </div>
+        <div class="skill-category">
+            <span class="skill-label">Soft Skills:</span> Cross-functional collaboration, Agile teamwork, Problem-solving, Adaptability, Communication, Time management, Leadership
+        </div>
+    </div>
+</body>
+</html>
