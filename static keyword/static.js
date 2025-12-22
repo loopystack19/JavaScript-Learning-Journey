@@ -1,36 +1,46 @@
-class Users{
+//Create a Vehicle class that tracks the total number of vehicles created using a static property, then design a constructor that initializes make, model, and year for each instance;
+//  add a method called displayInfo using a regular function (to properly use this) that logs the vehicle's details, and finally,
+//  write a separate piece of code to instantiate three different vehicles and log the static count to the console to prove that the class is successfully tracking all objects created from its blueprint.
 
-    static userCount =0;
+class Vehicle{
 
-    constructor(userName){
+    static vehicleCount=0;
 
-        this.userName=userName;
+    constructor(make, model, year){
 
-        Users.userCount++;
+        this.make=make;
+
+        this.model=model;
+
+        this.year=year;
+
+        Vehicle.vehicleCount++;
+    }
+    displayInfo(){
+
+        console.log(`Car Make: ${this.make}`);
+
+        console.log(`Car Model: ${this.model}`);
+
+        console.log(`Year: ${this.year}`);
     }
 
-    static getUserCount(){
+    static displayCount(){
 
-        console.log(`There are ${Users.userCount} online`);
-    }
-
-    sayHello(){
-
-        console.log(`hello my user name is ${this.userName}`);
+        console.log(`We have created ${Vehicle.vehicleCount} vehicles`);
     }
 }
 
-let user1=new Users("spongeBob001");
-let user2 = new Users("patrick002");
-let user3 = new Users("squidward003");
-let user4 = new Users("sandy004");
+const vehicle1= new Vehicle("Tesla","Model3",2023);
 
-user1.sayHello();
+const vehicle2= new Vehicle("Ford","Mustang",1969);
 
-user2.sayHello();
+const vehicle3= new Vehicle("Toyota","Camry",2024);
 
-user3.sayHello();
+vehicle1.displayInfo();
 
-user4.sayHello();
+vehicle2.displayInfo();
 
-Users.getUserCount();
+vehicle3.displayInfo();
+
+Vehicle.displayCount();
