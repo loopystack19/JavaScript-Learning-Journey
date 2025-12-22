@@ -1,30 +1,33 @@
+//Classes-These are blueprints for creating objects
 
-class Product{
+class product{
 
     constructor(name, price){
 
         this.name=name;
-
         this.price=price;
     }
+
     displayProduct(){
 
-        console.log(`product: ${this.name}`);
+        console.log(`Product ${this.name}`);
 
-        console.log(`price:$${this.price.toFixed(2)}`);
+        console.log(`Price: $${this.price.toFixed(2)}`);
     }
+    calculateTotal(salesTax){
 
-    calculateSalesTax(salesTax){
-
-       return (this.price + this.price * salesTax).toFixed(2);
-
+        return this.price +(this.price * salesTax)
     }
 }
 
-const product1= new Product("shirt",10.87)
+let product1= new product("shirt",10.99);
 
-product1.displayProduct();
+let product2=new product("Pens",3.20);
 
-const total=product1.calculateSalesTax(0.05);
+let product3=new product("underWear",100);
 
-console.log(`your total is $${total}`);
+const salesTax=0.05;
+
+let total=product1.calculateTotal(salesTax);
+
+console.log(total);
