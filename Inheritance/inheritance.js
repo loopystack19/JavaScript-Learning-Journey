@@ -1,50 +1,33 @@
 class Animal{
 
-    alive=true;
+    constructor(name, age){
+        this.name=name;
+        this.age=age;
+    }
 
     eat(){
-
         console.log(`This ${this.name} is eating`);
     }
-
-    sleep(){
-
-        console.log(`This ${this.name} is sleeping`);
-    }
-}
-
-class Rabbit extends Animal{
-
-    name="rabbit";
 }
 
 class Fish extends Animal{
 
-    name="fish";
+    constructor(name,age,swimSpeed){
+        super(name,age);
+        this.swimSpeed=swimSpeed;
+    }
+
+    displaySpeed(){
+        console.log(`This ${this.name} has a swim speed of ${this.swimSpeed} km/h`);
+    }
 }
 
-class Hawk extends Animal{
+const animal=new Animal("Gary",3);
 
-    name="hawk";
-}
+const fish1=new Fish("Tilapia",3,12);
 
+animal.eat();
 
-const rabbit = new Rabbit();
+fish1.eat();
 
-const fish = new Fish();
-
-const hawk = new Hawk();
-
-
-console.log(rabbit.alive);
-
-rabbit.eat();
-
-rabbit.sleep();
-
-console.log(fish.alive);
-
-fish.eat();
-
-fish.sleep();
-
+fish1.displaySpeed();
