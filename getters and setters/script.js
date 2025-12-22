@@ -1,47 +1,47 @@
 class Rectangle{
 
-    constructor(width, length){
-
+    constructor(width, height){
         this.width=width;
-
-        this.length=length;
+        this.height=height;
     }
 
     set width(newWidth){
-
-        if(newWidth > 0){
-
+        if(newWidth>0){
             this._width=newWidth;
         }else{
+            console.error("Width must be a positive number");
+        }
+    }
 
-            console.log("width value should be greater than 0");
+    set height(newHeight){
+
+        if(newHeight>0){
+            this._height=newHeight;
+        }else{
+            console.error("Height must be a positive integer");
         }
     }
 
     get width(){
-
         return this._width;
     }
 
-    set length(newLength){
+    get height(){
 
-        if(newLength > 0){
-
-            this._length = newLength;
-        }else{
-
-            console.log("The value of the length should be greater than 0");
-        }
+        return this._height;
     }
 
-    get length(){
+    get area(){
 
-        return this._length;
+        return this._width * this._height;
     }
 }
 
-const rectangle = new Rectangle(3,4);
+const rectangle= new Rectangle(3,4);
 
 console.log(rectangle.width);
 
-console.log(rectangle.length);
+console.log(rectangle.height);
+
+console.log(rectangle.area);
+
