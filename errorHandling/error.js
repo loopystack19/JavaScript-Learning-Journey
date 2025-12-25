@@ -1,19 +1,33 @@
-try {
-  let dividend = Number(window.prompt("Enter a dividend"));
+//Error objects in js =>An object that is created to represent a problem
 
-  let divisor = Number(window.prompt("Enter a divisor"));
+//When errors are uncaught the programme exists prematurely
 
-  if (divisor === 0) {
-    throw new Error("The divisor can be zero, provide another value");
+// try{
+//   console.log(x);
+// }
+// catch(error){
+
+//   console.error(error);
+// }
+// console.log("You have reached the end of the programme");
+
+try{
+
+  const dividend=Number(window.prompt("Enter a dividend Number: "));
+
+  const divisor=Number(window.prompt("Enter a divisor: "));
+
+  if(divisor === 0){
+    throw new Error("The divisor cannot be a zero: ");
   }
 
-  if (isNaN(dividend) || isNaN(divisor)) {
-    throw new Error("both the dividend and divisor need to be of number value");
-  }
-} catch (error) {
-    
+  const results= dividend / divisor;
+
+  console.log(results);
+
+}
+catch(error){
+
   console.error(error);
 
-} finally {
-  console.log("this always executes");
 }
