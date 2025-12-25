@@ -1,13 +1,36 @@
-let fruits = [
-  { name: "Apple", color: "red", calories: 95 },
-  { name: "Banana", color: "Yellow", calories: 135 },
-  { name: "coconut", color: "white", calories: 65 },
-  { name: "Dragon Fruit", color: "pink", calories: 105 },
-  { name: "egg plant", color: "purple", calories: 75 },
-];
+//Array of objects in js
 
+let fruits=[
+  {fruitName:"Apple",color:"red",kcal:340},
+  {fruitName:"Banana",color:"yellow",kcal:320},
+  {fruitName:"Oranges",color:"Orange",kcal:112},
+  {fruitName:"Coconut",color:"brown",kcal:230}
+]
 
-fruits.forEach((fruit)=>{
+//using the map array method
 
-    console.log(fruit);
+const fruitNames=fruits.map(fruit => fruit.fruitName);
+
+//using the filter method
+
+const higherCalories=fruits.filter((fruit)=>{
+  if(fruit.kcal>112){
+    return fruit;
+  }
 })
+
+//using the reduce method
+
+let maxFruits=fruits.reduce((accumulator, next)=>{
+  if(next.kcal> accumulator.kcal){
+    return next;
+  }else{
+    return accumulator;
+  }
+})
+
+console.log(fruitNames);
+
+console.log(higherCalories);
+
+console.log(maxFruits);
