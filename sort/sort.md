@@ -1,4 +1,4 @@
--The sort method is used the elemnts of an array in lexicographical order, its sorts the elements of the array in place
+-The sort method is used to sort the elements of an array in lexicographical order, its sorts the elements of the array in place
 
 **sample programme**-sort the number elements of an array in decending order
 
