@@ -117,24 +117,45 @@
 
 //.children=>This selects all the children of a selected element
 //it returns a html collection 
-const vegetableUl=document.getElementById("vegetables");
+// 
 
-let vegetableChildren=vegetableUl.children;
-
-Array.from(vegetableChildren).forEach(vegetableChild=>{
-    Object.assign(vegetableChild.style , {
-        backgroundColor:"blue",
-        textAlign:"center",
-        padding:"30px",
-        color:"white",
-        border:"1px solid black",
-        margin:"5px"
-    })
-})
+//Adding and removing html elements
 
 
+//step 1 create the element
 
+// const newH1=document.createElement("h1");
+// newH1.textContent="I love pizza";
+// newH1.style.color="tomato";
+// newH1.style.textAlign="center";
+// newH1.id="myH1";
+//step 2 append the element
+// document.body.prepend(newH1);
+//When you use the append method, it becomes the last child the selected element
+//.insertBefore(newElement, currentElement);
 
+// const box2=document.getElementById("box2");
+
+// document.body.insertBefore(newH1,box2)
+
+//Removing an element
+
+// document.body.removeChild(newH1);
+
+//Create the element
+
+// const orangeElement=document.createElement("li");
+// orangeElement.textContent="Orange";
+// orangeElement.style.fontWeight="bold";
+// orangeElement.style.backgroundColor="lightgreen";
+
+// let listItems=document.querySelectorAll("#fruits li");
+
+// document.getElementById("fruits").insertBefore(orangeElement, listItems[0]);
+
+//nodelist-A static collection of html elements, similar to an array but without map, filter, reduce
+
+const buttons=document.querySelectorAll(".myButtons")
 
 
 
