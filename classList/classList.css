@@ -9,10 +9,19 @@
     border: none;
     padding: 10px 15px;
     border-radius: 10px;
+    cursor: pointer;
 }
 .enabled{
-    background-color: black;
+    background-color: blue;
     color: white;
-    text-transform: capitalize;
-    cursor: pointer;
+    width: 300px;
+    height: 100px;
+    border: 1px solid black;
+    font-size: 12px;
+}
+.disabled{
+    cursor: not-allowed;
+    background-color: grey;
+    color: black;
+    border: 1px solid black;
 }

@@ -20,7 +20,8 @@ myButtons.forEach(button=>{
         Object.assign(button.style,{
             backgroundColor:"blue",
             color:"white",
-            fontSize:"3rem"
+            fontSize:"3rem",
+            cursor:"pointer"
         })
     })
 });
