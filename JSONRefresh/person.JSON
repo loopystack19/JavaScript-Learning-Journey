@@ -1,0 +1,7 @@
+{
+    "firstName":"SpongeBob",
+    "lastName":"Squarepants",
+    "age":27,
+    "isEmployed":true,
+    "hobbies":["Karate","Jelly fishing","Bubbles"]
+}

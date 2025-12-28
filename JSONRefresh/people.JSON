@@ -1,0 +1,19 @@
+[{
+    "firstName":"SpongeBob",
+    "lastName":"Squarepants",
+    "age":27,
+    "isEmployed":true,
+    "hobbies":["Karate","Jelly fishing","Bubbles"]
+},{
+    "firstName":"Patrick",
+    "lastName":"Star",
+    "age":32,
+    "isEmployed":false,
+    "hobbies":["eating","Jelly fishing","Bubbles"]
+},{
+    "firstName":"Sandy",
+    "lastName":"Cheeks",
+    "age":25,
+    "isEmployed":false,
+    "hobbies":["Karate","science experiments","inventing"]
+}]
