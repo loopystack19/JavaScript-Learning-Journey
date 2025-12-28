@@ -153,9 +153,7 @@
 
 // document.getElementById("fruits").insertBefore(orangeElement, listItems[0]);
 
-//nodelist-A static collection of html elements, similar to an array but without map, filter, reduce
 
-const buttons=document.querySelectorAll(".myButtons")
 
 
 
